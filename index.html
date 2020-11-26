@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap" rel="stylesheet">
+
+        <link href="/Users/jamesw/Desktop/survey page/style.css" rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+        <div id="container">
+        <h1 id="title">Survey Form</h1>
+
+        <p id="description">Thank you for taking the time to complete the survey</p>
+        
+        <form id="survey-form">
+        <div id="input-headings">
+            
+            <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" class="form-inputs" required>
+            </div>
+            
+            
+            <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your Email" class="form-inputs" required>
+            </div>
+            
+
+            <div class="form-group">
+            <label id="number-label" for="number">Age (optional)</label>
+            <input id="number" type="number" min="1" max="99" placeholder="Enter your age" class="form-inputs">
+            </div>
+            
+            
+
+            <div id="selectdiv" class="form-group">
+            <label id="dropdown-label" for="dropdown">Which season if your favorite?</label>
+            <select id="dropdown" name="menu">
+                <option value="" disabled selected hidden>Select an option</option>
+                <option value="Summer">Summer</option>
+                <option value="Fall">Fall</option>
+                <option value="Winter">Winter</option>
+                <option value="Spring">Spring</option>
+            </select>
+            </div>
+            
+            
+
+            <div id="radiodiv" class="form-group">
+            <label id="radiolabel">What time are you most productive?</label>
+            <label id="radiobutton" for="early">
+                <input id="early" type="radio" name="choices" value="early" class="input-radio">Early morning
+            </label>
+
+            <label id="radiobutton" for="mid-afternoon">
+                <input id="mid-afternoon" type="radio" name="choices" value="mid-afternoon" class="input-radio">Mid-afternoon
+            </label>
+
+            <label id="radiobutton" for="evening">
+                <input id="evening" type="radio" name="choices" value="evening"
+                class="input-radio">In the evening
+            </label>
+
+            <label id="radiobutton" for="night">
+                <input id="night" type="radio" name="choices" value="night"
+                class="input-radio">Late at night
+
+            </label>
+            </div>
+
+            <div class="form-group">
+            <label>Which of these snacks would you eat? (check all that apply)</label>
+            <label>
+                <input type="checkbox" name="checkers" value="fruit" class="input-checkbox">Fresh fruits
+            </label>
+
+            <label>
+                <input type="checkbox" name="checkers" value="donuts"
+                class="input-checkbox">Donuts
+            </label>
+
+            <label>
+                <input type="checkbox" name="checkers" value="tortilla-chips"
+                class="input-checkbox">Tortilla chips
+            </label>
+
+            <label>
+                <input type="checkbox" name="checkers" value="ice-cream"
+                class="input-checkbox">Ice cream
+            </label>
+
+            <label>
+                <input type="checkbox" name="checkers" value="sandwiches" class="input-checkbox">Sandwiches
+            </label>
+            </div>
+            
+
+            <div id="commentbox" class="form-group">
+            <label>Additional Comments</label>
+            
+            <textarea id="textarea" name="comments" rows="5" cols="40" placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="form-group">
+            <input id="submit" type="submit" value="Submit">
+            </div>
+            
+        </div>
+        </form>
+        </div>
+    </body>
+</html>
+
